@@ -1,0 +1,256 @@
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main application */
+.app {
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app.light {
+  background-color: #ffffff;
+  color: #212529;
+}
+
+.app.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 14px 24px;
+  position: relative;
+  top: 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  margin-right: 12px;
+  transition: color 0.2s ease;
+}
+
+
+/* TextUtils content */
+.app .container {
+  max-width: 1100px;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+/* Text area */
+.app textarea {
+  width: 100%;
+  min-height: 180px;
+  padding: 14px;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  font-size: 16px;
+  resize: vertical;
+  transition: border-color 0.2s ease;
+}
+
+.app textarea:focus {
+  outline: none;
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15);
+}
+
+/* Dark mode form fields */
+.app.dark textarea,
+.app.dark input {
+  background-color: #1a1a1a;
+  color: white;
+  border-color: #555555;
+}
+
+.app.dark textarea::placeholder,
+.app.dark input::placeholder {
+  color: #cbd5e1;
+}
+
+/* Buttons */
+.app button {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.app button:hover {
+  opacity: 0.88;
+}
+
+/* Mobile layout */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 12px;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .app .container {
+    padding-top: 18px;
+  }
+}
+
+/* Dark Mode */
+.app.dark {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+}
+
+/* Light Mode */
+.app.light {
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+}
+
+/* Navbar Dark Mode */
+.app.dark .navbar {
+  background-color: black !important;
+}
+
+.app.dark .navbar-brand,
+.app.dark .nav-link {
+  color: white !important;
+}
+
+/* Navbar Light Mode */
+.app.light .navbar {
+  background-color: white !important;
+}
+
+.app.light .navbar-brand,
+.app.light .nav-link {
+  color: black !important;
+}
+
+/* Text Area Dark Mode */
+.app.dark textarea {
+  background-color: black;
+  color: white;
+}
+
+/* About Section Dark Mode */
+.app.dark h1,
+.app.dark h2,
+.app.dark h3,
+.app.dark p {
+  color: white;
+}
+
+
+/* Light Mode: About and TextUtils containers */
+.app.light .container {
+  background-color: white;
+  color: black;
+}
+
+/* Dark Mode: About and TextUtils containers */
+.app.dark .container {
+  background-color: black;
+  color: white;
+}
+
+/* Text area in Light Mode */
+.app.light textarea {
+  background-color: white;
+  color: black;
+}
+
+
+/* Light Mode: All buttons */
+.app.light button {
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+/* Dark Mode: All buttons */
+.app.dark button {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+
+/* ABOUT SECTION - LIGHT MODE */
+.app.light .accordion-item {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid #dee2e6;
+}
+
+.app.light .accordion-header {
+  background-color: white !important;
+  color: black !important;
+}
+
+.app.light .accordion-body {
+  background-color: white !important;
+  color: black !important;
+}
+
+.app.light .accordion-body strong,
+.app.light .accordion-body code {
+  color: black !important;
+}
+
+/* ABOUT SECTION - DARK MODE */
+.app.dark .accordion-item {
+  background-color: black !important;
+  color: white !important;
+  border: 1px solid #444;
+}
+
+.app.dark .accordion-header {
+  background-color: black !important;
+  color: white !important;
+}
+
+.app.dark .accordion-body {
+  background-color: black !important;
+  color: white !important;
+}
+
+.app.dark .accordion-body strong,
+.app.dark .accordion-body code {
+  color: white !important;
+}
+
+/* Accordion arrow */
+.app.dark .accordion-icon {
+  color: white;
+}
+
+.app.light .accordion-icon {
+  color: black;
+}
+
+/* About heading */
+.app.dark .container h1 {
+  color: white !important;
+}
+
+.app.light .container h1 {
+  color: black !important;
+}
+
